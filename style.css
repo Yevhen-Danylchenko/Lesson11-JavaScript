@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --title-color: #626262;
+    --text-color: #626262;
+    --link-color: #7D7D7D;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.body-container {
+    width: 1200px;
+
+    background-color: #fff;
+
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 906px;
+
+    margin: 0 auto;
+}
+
+
+
+/* ==================== Header =================== */
+
+.menu {
+    gap: 100px;
+
+    justify-content: center;
+
+    margin-top: 71px;
+    margin-bottom: 92px;
+}
+
+.menu a {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: var(--main-color);
+}
+
+li:nth-child(1) a {
+    color: #3FAA3F;
+}
+
+
+/* ==================  Section 1 ====================== */
+
+.sec1-wrap {
+    gap: 65px;
+
+    margin-bottom: 120px;
+}
+
+.text .p1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #B4AD9E;
+
+    margin-top: 62px;
+    margin-bottom: 32px;
+}
+
+.text h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+
+    color: var(--text-color);
+
+}
+
+.text .p2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: var(--text-color);
+}
+
+
+/* =============== Бургер кномка====================== */
+
+.burger{
+    display: none;
+
+    flex-direction: column;
+    cursor: pointer;
+    gap: 3px;
+
+    margin-top: 20px;
+}
+
+.burger span {
+    display: block;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: var(--text-color);
+}
+
+
+/* ============== Адаптив на планшет ================= */
+
+@media (max-width:768px) {
+    .container {
+        width: 90%;
+    }
+
+    .menu {
+        display: none;
+
+        gap: 20px;
+
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sec1-wrap {
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 420px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .burger {
+        display: flex;
+        margin-left: 20px;
+
+        margin-bottom: 20px;
+    }
+
+    .hidden {
+        display: flex;
+    }
+}
+
+
+/* ============= Адаптив на телефон ================== */
+
+@media (max-width:420px) {
+    .container {
+        width: 90%;
+    }
+
+    .menu {
+        gap: 20px;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .sec1-wrap {
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 420px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .burger {
+        display: flex;
+        margin-left: 20px;
+
+        margin-bottom: 20px;
+    }
+
+    .hidden {
+        display: flex;
+    }
+}
