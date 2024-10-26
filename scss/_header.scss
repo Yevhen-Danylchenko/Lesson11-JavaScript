@@ -1,0 +1,18 @@
+@import './mainBody';
+
+.menu {
+    gap: 100px;
+
+    justify-content: center;
+
+    margin-top: 71px;
+    margin-bottom: 92px;
+}
+
+.menu a {
+    @extend %text;
+}
+
+li:nth-child(1) a {
+    color: #3FAA3F;
+}

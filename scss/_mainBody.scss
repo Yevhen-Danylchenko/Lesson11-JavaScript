@@ -1,0 +1,37 @@
+/* ==================  Section 1 ====================== */
+
+.sec1-wrap {
+    gap: 65px;
+
+    margin-bottom: 120px;
+}
+
+%text {
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: $text-color;
+}
+
+.text .p1 {
+    @extend %text;
+
+    margin-top: 62px;
+    margin-bottom: 32px;
+}
+
+.text h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+
+    color: $text-color;
+
+}
+
+.text .p2 {
+    @extend %text;
+}

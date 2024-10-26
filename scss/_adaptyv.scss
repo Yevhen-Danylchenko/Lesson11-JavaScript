@@ -1,0 +1,83 @@
+/* ============== Адаптив на планшет ================= */
+
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+
+        gap: 20px;
+
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sec1-wrap {
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 420px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .burger {
+        display: flex;
+        margin-left: 20px;
+
+        margin-bottom: 20px;
+    }
+
+    .hidden {
+        display: flex;
+    }
+}
+
+
+/* ============= Адаптив на телефон ================== */
+
+@media (max-width:420px) {
+    .container {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sec1-wrap {
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 420px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .burger {
+        display: flex;
+        margin-left: 20px;
+
+        margin-bottom: 20px;
+    }
+
+    .hidden {
+        display: flex;
+    }
+}
